@@ -20,20 +20,22 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/media.css" />
   </head>
 
   <body>
     <header class="head">
       <div class="header-container container">
         <nav class="page-nav">
-          <a href="./index.html" class="menu-web"
+          <a href="./index.html" class="menu-web web-mob"
             >WEB<span class="studio">STUDIO</span></a
           >
+
           <ul class="menu">
-            <li class="menu-item">
+            <li class="menu-item1">
               <a href="./index.html" class="header liner text-header">Studio</a>
             </li>
-            <li class="menu-item">
+            <li class="menu-item2">
               <a href="./portfolio.html" class="header">Portfolio</a>
             </li>
             <li class="menu-item">
@@ -49,13 +51,77 @@
                 >info@devstudio.com</a
               >
             </li>
-            <li>
+            <li class="tel">
               <a href="tel:+110001111111" class="header-2"
                 >+11 (000) 111-11-11</a
               >
             </li>
           </ul>
         </address>
+        <button type="button" class="open-button js-open-menu">
+          <svg class="open-icon" width="32" height="22">
+            <use href="./images/icons.svg#icon-Vector"></use>
+          </svg>
+        </button>
+      </div>
+
+      <div class="mob-menu js-menu-container" data-menu>
+        <button type="button" class="modal-close-btn js-close-menu">
+          <svg class="modal-close-btn-icon">
+            <use href="./images/icons.svg#icon-close-black-18dp-2-1"></use>
+          </svg>
+        </button>
+        <ul class="mob-menu-link">
+          <li>
+            <a href="./index.html" class="mob-menu-i text-header">Studio</a>
+          </li>
+          <li>
+            <a href="./portfolio.html" class="mob-menu-i">Portfolio</a>
+          </li>
+          <li>
+            <a href="" class="mob-menu-i">Contacts</a>
+          </li>
+        </ul>
+        <ul class="mob-menu-2">
+          <li class="">
+            <a href="tel:+110001111111" class="tel-mob">+11 (000) 111-11-11</a>
+          </li>
+          <li class="mail-mob-2">
+            <a href="mailto:info@devstudio.com" class="mail-mob"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+        <ul class="mob-icons">
+          <li class="mob-back-team-icons">
+            <a href="" class="mob-link-about"
+              ><svg class="mob-team-icons">
+                <use href="./images/icons.svg#icon-instagram-2"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mob-back-team-icons">
+            <a href="" class="mob-link-about"
+              ><svg class="mob-team-icons">
+                <use href="./images/icons.svg#icon-twitter-1"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mob-back-team-icons">
+            <a href="" class="mob-link-about"
+              ><svg class="mob-team-icons">
+                <use href="./images/icons.svg#icon-facebook-1"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mob-back-team-icons">
+            <a href="" class="mob-link-about"
+              ><svg class="mob-team-icons">
+                <use href="./images/icons.svg#icon-linkedin-1"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
       </div>
     </header>
 
@@ -135,7 +201,7 @@
                 alt="Computer"
                 width="360"
                 height="300"
-                class="my-photo"
+                class="my-photo-2"
               />
             </li>
             <li class="third-menu-item">
@@ -144,7 +210,7 @@
                 alt="Phones"
                 width="360"
                 height="300"
-                class="my-photo"
+                class="my-photo-2"
               />
             </li>
             <li class="third-menu-item">
@@ -153,7 +219,7 @@
                 alt="Phone"
                 width="360"
                 height="300"
-                class="my-photo"
+                class="my-photo-2"
               />
             </li>
           </ul>
@@ -348,7 +414,7 @@
 
       <section class="customers">
         <div class="container">
-          <h2 class="doing">Customers</h2>
+          <h2 class="doing-2">Customers</h2>
           <ul class="fcust">
             <li class="cust-li-icons">
               <a href="" class="cust-link">
@@ -399,7 +465,7 @@
 
     <footer class="footr">
       <div class="container footer-cont">
-        <div>
+        <div class="footer-text">
           <a href="./index.html" class="menu-web f-mar"
             >WEB<span class="studio-2">STUDIO</span></a
           >
@@ -442,6 +508,7 @@
             </li>
           </ul>
         </div>
+
         <div class="footer-sub">
           <p class="soc-media">Subscribe</p>
           <form class="footer-form">
@@ -463,6 +530,7 @@
         </div>
       </div>
     </footer>
+
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-close-btn" data-modal-close>
@@ -541,5 +609,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
