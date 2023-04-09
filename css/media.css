@@ -5,6 +5,47 @@
     margin-left: auto;
     margin-right: auto;
 }
+@media screen and (min-width: 300px) and (max-width: 428px) {
+.tel-mob {
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 1.11;
+        letter-spacing: 0.02em;
+        text-transform: capitalize;
+        color: #4D5AE5;
+        text-decoration: none;
+    }
+    .mail-mob {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #434455;
+    margin-bottom: 40px;
+    text-decoration: none;
+}
+.mob-icons {
+    margin-top: 48px;
+    margin-right: 60px;
+    display: flex;
+    gap: 32px;
+    align-items: center;
+}
+.contacts {
+    color: #404BBF;
+}
+.mob-menu-i {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: #2E2F42;
+    list-style: none;
+    text-decoration: none;
+}
+}
+
 @media screen and (max-width: 767px) {
 .image.with-image {
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/Dark-bg-min.jpg);
@@ -12,6 +53,16 @@
     background-size: cover;
     height: 423px;
     }
+    @media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .image.with-image {
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/Dark-bg-2x.jpg);
+    }
+}
+    .contacts {
+    color: #404BBF;
+}
 .first-section {
     font-size: 36px;
     line-height: 40px;
@@ -19,9 +70,15 @@
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: var(--background-color); 
-    width: 320px;
+    max-width: 320px;
     margin: auto;
     margin-bottom: 72px;
+}
+.address {
+    display: none;
+}
+.cust-li-icons {
+    width: 190px;
 }
 .begin {
     margin: auto;
@@ -33,6 +90,7 @@
     align-items: center;
 
 }
+
 .advantage-icons {
     display: none;
 }
@@ -52,9 +110,6 @@
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--text-color);
-}
-.second-menu-item {
-    min-width: 396px;
 }
 
 .second-menu-item:not(:nth-child(4n)) {
@@ -194,8 +249,9 @@
     margin-bottom: 16px;
     width: 100%;
 }
-.web-mob {
-    margin: 24px auto 24px 16px;
+.head {
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 .open-icon {
     stroke: black;
@@ -203,7 +259,7 @@
 .open-button {
     background-color: transparent;
     border: none;
-    margin-right: 16px;
+    padding: 0;
 }
 .header-container {
     display: flex;
@@ -211,7 +267,7 @@
 }
 .backdrop {
     position: fixed;
-    top: 132px;
+    top: 0;
     left: 0;
     width: 100%;
     height: 100%;
@@ -251,6 +307,13 @@
     background-size: cover;
     height: 436px;
 }
+    @media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .image.with-image {
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/Dark-bg-pl-2x.jpg);
+    }
+}
 .f-mar {
     margin: 0px 0px 16px 0px;
 }
@@ -258,8 +321,18 @@
     height: 72px;
 }
 .page-nav {
-    margin-bottom: 24px;
-    margin-top: 24px;
+    padding-bottom: 24px;
+    padding-top: 24px;
+}
+.header-2{
+    font-weight: 400;
+font-size: 12px;
+line-height: 1.17;
+letter-spacing: 0.04em;
+color: #434455;
+}
+.address {
+    padding-bottom: 12px;
 }
 .first-section {
     font-weight: 700;
@@ -268,7 +341,7 @@
     text-align: center;
     letter-spacing: 0.02em;
     color: var(--background-color);
-    width: 496px;
+    max-width: 496px;
     margin: auto;
     margin-bottom: 40px;
 }
@@ -279,9 +352,6 @@
     padding-bottom: 96px;
     flex-wrap: wrap;
 
-}
-.footer-soc-med { 
-    margin-left: 24px;
 }
 
 .second-menu {
@@ -332,22 +402,22 @@ text-transform: capitalize;
     background-color: var(--dark-color);
     padding-top: 96px;
     padding-bottom: 96px;
-    padding-left: 108px;
-    height: 454px;
-    width: 100%;
 }
 .footer-cont {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    column-gap: 24px;
-    width: 100%;
+    row-gap: 72px;
+    max-width: 582px;
+}
+.footer-soc-med {
+    margin-left: 120px;
 }
 .cust-li-icons {
     width: 168px;
 }
 .footer-sub {
-    margin-left: 0px;
+    margin-left: auto;
 }
 .footer-form {
     display: flex;
@@ -409,11 +479,8 @@ width: 356px;
 }
 .mail-and-tel {
     display: block;
-    margin-bottom: 12px;
 }
-.address {
-    margin-left: 70px;
-}
+
 .menu-item, .menu-item1,
 .menu-item2, .mail, .tel {
     display: block;
@@ -426,6 +493,10 @@ width: 356px;
     font-size: 0px;
 
 }
+.mob-menu {
+    display: none;
+}
+
 .my-photo-2 {
     display: none;
 }
@@ -442,6 +513,12 @@ width: 356px;
       background-size: cover;
       height: 600px;
   }
+      @media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .image.with-image {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office-2x.jpg);    }
+}
 .headers-sect-2{
     font-weight: 500;
     font-size: 20px;
@@ -450,6 +527,12 @@ width: 356px;
     color: var(--dark-color);
     width: 264px;
     text-align: left;
+  }
+  .header-2 {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 1.5;
+      letter-spacing: 0.02em;
   }
 .web-mob {
     margin: 0;
@@ -462,7 +545,9 @@ width: 356px;
     flex-wrap: wrap;
     align-items: center;
 }
-
+.button-i {
+    margin-top: 48px;
+}
 .second-menu-item {
     min-width: 264px;
     margin: 0;
@@ -488,10 +573,7 @@ width: 356px;
  .menu-web {
     margin-right: 76px;
  }
-.menu {
-    display: flex;
-    align-items: center;
-}
+
 .advantage {
     width: 264px;
     height: 112px;
@@ -545,9 +627,18 @@ width: 356px;
 .third-menu-item:not(:nth-child(3n)) {
     margin-right: 24px;
 }
+.address {
+    padding: 0;
+}
 .mail-and-tel {
    margin-top: 0;
    margin-bottom: 0;
+   padding-top: 24px;
+   padding-bottom: 24px;
+}
+.menu {
+    display: flex;
+    align-items: center;
 }
 .header-container{
     display: flex;
@@ -570,7 +661,9 @@ width: 356px;
     display: flex;
     justify-content: center;
 }
-.footr {
-    height: 310px;
+
+.page-nav {
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 }
